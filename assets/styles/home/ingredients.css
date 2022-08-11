@@ -1,0 +1,79 @@
+.section-ingredients {
+    background-color: #FFFBF6;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.75rem;
+}
+
+.section-ingredients-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1.25rem;
+    row-gap: 1rem;
+}
+
+.section-ingredients-list__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-ingredients__description {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-ingredients-list__item span {
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    margin-top: 1rem;
+}
+
+.section-ingredients--reversed {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.section-ingredients a {
+    width: max-content;
+    margin: 1.5rem auto 0;
+}
+
+@media (min-width: 992px) {
+    .section-ingredients{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .section-ingredients--reversed {
+        flex-direction: column;
+    }
+
+    .section-ingredients-list {
+        row-gap: 0;
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 2.75rem;
+    }
+
+    .section-ingredients__description {
+        margin-top: 2.875rem;
+        margin-bottom: 1rem;
+        font-size: .875rem;
+    }
+
+
+    .section-ingredients a {
+        margin: 0 auto 0;
+    }
+}
