@@ -17,7 +17,7 @@
     row-gap: .875rem;
     text-align: center;
     background-color: #FFFBF7;
-    padding: 2.25rem 1rem 2.75rem;
+    padding: 1.25rem 1rem 1.75rem;
 }
 
 .home-hero-description:before {
@@ -70,7 +70,7 @@
         width: 25.5rem;
         height: 33.75rem;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translate(-50%, -50%);
     }
 
     .home-hero__img--wrapper{

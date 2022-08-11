@@ -1,0 +1,64 @@
+.section-bestseller {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.section-bestseller .link-underline {
+    text-transform: uppercase;
+    width: max-content;
+    margin: auto auto 0;
+}
+
+.section-bestseller__text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.bestseller-swiper .swiper-slide {
+    padding: 1.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bestseller-swiper h3 {
+    font-size: 1.25rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.bestseller-swiper-controls {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.bestseller-swiper-controls .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bestseller-swiper-prev {
+    left: 0;
+}
+
+.bestseller-swiper-next {
+    right: 0;
+}
+
+@media (min-width: 992px) {
+    .section-bestseller {
+        padding-top: 4.375rem;
+    }
+
+    .bestseller-swiper-controls {
+        margin-bottom: 3.75rem;
+    }
+
+    .bestseller-swiper h3 {
+        font-size: 1.75rem;
+    }
+}

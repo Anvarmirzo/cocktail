@@ -24,6 +24,8 @@ input:disabled + label {
 
 .link-underline {
     position: relative;
+    font-weight: 700;
+    font-family: var(--secondary-font);
 }
 
 .link-underline::after {
@@ -35,4 +37,8 @@ input:disabled + label {
     left: 0;
     bottom: 4px;
     background-color: currentColor;
+}
+
+.link-underline:hover {
+    color: #BB6B1E;
 }
