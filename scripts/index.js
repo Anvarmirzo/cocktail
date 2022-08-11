@@ -39,8 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
 				menu.classList.toggle('active');
 			});
 			menu.addEventListener('click', function (e) {
-				console.log(e);
-			})
+				if (e.target.classList.contains('mobile-menu')) {
+					menu.classList.toggle('active');
+				}
+
+			});
 		} else {
 			console.warn('Burger or menu not found');
 		}

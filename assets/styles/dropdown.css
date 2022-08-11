@@ -8,6 +8,9 @@
 }
 
 .dropdown-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
     position: absolute;
     left: 0;
     opacity: 0;
@@ -16,6 +19,7 @@
 }
 
 .dropdown-list.active {
+    margin-top: .7rem;
     opacity: 1;
     visibility: visible;
 }
