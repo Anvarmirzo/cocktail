@@ -9,9 +9,20 @@
     line-height: 1.1;
 }
 
+.h2 {
+    font-weight: 700;
+    font-size: 2.188rem;
+    line-height: 1.83;
+}
+
 @media (min-width: 992px) {
     .h1 {
         font-size: 75px;
         line-height: .85;
+    }
+
+    .h2{
+        font-size: 4.375rem;
+        line-height: .91;
     }
 }

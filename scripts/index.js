@@ -8,6 +8,23 @@ document.addEventListener('DOMContentLoaded', function () {
 					}
 				}
 			);
+
+			const bestsellerSwiper = new Swiper('.bestseller-swiper', {
+					slidesPerView: 2,
+					navigation: {
+						nextEl: '.bestseller-swiper-next',
+						prevEl: '.bestseller-swiper-prev'
+					},
+					breakpoints: {
+						300: {
+							slidesPerView: 2
+						},
+						992: {
+							slidesPerView: 4
+						}
+					}
+				}
+			);
 		} else {
 			console.warn('Swiper not found');
 		}
