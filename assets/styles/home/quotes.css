@@ -1,0 +1,49 @@
+.section-quotes {
+    position: relative;
+    background-color: #FFFBF6;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    font-family: var(--secondary-font);
+}
+
+.section-quotes-swiper {
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.section-quotes-swiper .swiper-slide {
+    padding: 2.5rem 5rem;
+}
+
+.section-quotes-swiper__text {
+    position: relative;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.7;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-quotes-swiper svg {
+    margin: 0 auto 2.5rem;
+}
+
+.section-quotes-swiper img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-quotes .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #BB6B1E;
+}
+
+.section-quotes .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    background-color: #000;
+    opacity: .1;
+}
+
+.section-quotes .swiper-pagination-bullets{
+    bottom: 3rem;
+}
