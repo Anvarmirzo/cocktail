@@ -1,0 +1,21 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown__title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropdown-list {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: max-content;
+}
+
+.dropdown-list.active {
+    opacity: 1;
+    visibility: visible;
+}

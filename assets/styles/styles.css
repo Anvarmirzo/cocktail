@@ -1,0 +1,15 @@
+@import url('../fonts/philosopher/stylesheet.css');
+@import url('../fonts/montserrat/stylesheet.css');
+@import url('./main.css');
+@import url('./reset.css');
+@import url('./typography.css');
+
+/* Components */
+@import url('./buttons.css');
+@import url('./dropdown.css');
+@import url('./breadcrumb.css');
+
+@import url('./header.css');
+
+@import url('./footer.css');
+
