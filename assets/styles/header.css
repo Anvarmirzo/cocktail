@@ -69,8 +69,10 @@
 .mobile-menu {
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;
     align-items: center;
     justify-content: center;
+    text-align: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -82,6 +84,7 @@
     transition: top var(--hover-transition);
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+    overflow-y: auto;
 }
 
 .mobile-menu.active {
@@ -98,7 +101,18 @@
     z-index: 2;
 }
 
-.mobile-menu .dropdown{}
+.mobile-menu .dropdown .dropdown-list{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.mobile-menu .dropdown .dropdown-list.active{
+    position: relative;
+    height: auto;
+    visibility: visible;
+}
 
 @media (min-width: 1200px) {
     .main-nav > *:nth-child(2) {
