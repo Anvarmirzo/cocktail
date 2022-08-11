@@ -11,6 +11,10 @@
     color: #fff;
 }
 
+.section-banner.section-banner-friends {
+    background-image: url('../../images/home/banner/drink.jpg');
+}
+
 .section-banner__subtitle {
     display: inline-block;
     font-weight: 700;
@@ -22,7 +26,7 @@
     margin-bottom: 2.75rem;
 }
 
-.section-banner__title{
+.section-banner__title {
     font-size: 2.5rem;
     line-height: 1;
     margin-bottom: 2.625rem;
@@ -34,23 +38,29 @@
     text-transform: uppercase;
 }
 
-.link-underline:after{
+.link-underline:after {
     bottom: 0;
 }
 
+.section-join__title{}
+
 @media (min-width: 992px) {
-    .section-banner__subtitle{
+    .section-banner__subtitle {
         font-size: .875rem;
         line-height: 1.2;
         margin-bottom: 2.25rem;
     }
 
-    .section-banner__title{
+    .section-banner__title {
         font-size: 5rem;
         margin-bottom: 1.875rem;
     }
 
-    .link-underline{
+    .link-underline {
         font-size: .875rem;
+    }
+
+    .section-banner.section-banner-friends {
+        height: 30rem;
     }
 }

@@ -1,0 +1,27 @@
+.section-join__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 1.375rem;
+    margin-bottom: 1.125rem;
+}
+
+.section-join-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 992px) {
+    .section-join__title {
+        font-size: 5rem;
+        line-height: .8;
+        margin-top: 3.375rem;
+        margin-bottom: 3.125rem;
+    }
+
+    .section-join-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
