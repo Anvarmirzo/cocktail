@@ -25,6 +25,23 @@ document.addEventListener('DOMContentLoaded', function () {
 					}
 				}
 			);
+
+			const quotesSwiper = new Swiper('.section-quotes-swiper', {
+					slidesPerView: 1,
+					pagination: {
+						el: '.section-quotes .swiper-pagination',
+						type: 'bullets'
+					},
+					breakpoints: {
+						300: {
+							slidesPerView: 1
+						},
+						992: {
+							slidesPerView: 3
+						}
+					}
+				}
+			);
 		} else {
 			console.warn('Swiper not found');
 		}
