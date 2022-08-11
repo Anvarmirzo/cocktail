@@ -16,6 +16,11 @@
     opacity: 0;
     visibility: hidden;
     width: max-content;
+    background-color: #fff;
+    padding: 1rem;
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-list.active {
