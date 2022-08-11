@@ -1,0 +1,9 @@
+.section-learn{
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .section-learn{
+        flex-direction: row;
+    }
+}

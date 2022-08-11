@@ -51,6 +51,11 @@
 }
 
 @media (min-width: 992px) {
+    .section-ingredients{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
     .section-ingredients--reversed {
         flex-direction: column;
     }
