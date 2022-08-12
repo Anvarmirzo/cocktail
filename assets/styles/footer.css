@@ -17,7 +17,7 @@
 }
 
 .footer-club__title {
-    font-weight: 600;
+    font-weight: 900;
     font-size: 1.5rem;
     line-height: 1.4;
     text-transform: uppercase;
@@ -156,11 +156,11 @@
         gap: .375rem;
     }
 
-    .footer-doc__official{
+    .footer-doc__official {
         margin-right: 1.125rem;
     }
 
-    .footer-doc-links{
+    .footer-doc-links {
         gap: .875rem;
     }
 }

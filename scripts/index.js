@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+	'use strict';
 	(function slider() {
 		if (Swiper) {
 			const bannerSwiper = new Swiper('.banner-swiper', {
