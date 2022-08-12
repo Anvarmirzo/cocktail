@@ -1,0 +1,89 @@
+.rating {
+    position: relative;
+}
+
+.rating li {
+    float: left;
+}
+
+.rating input {
+    border: 0 none !important;
+    clip: rect(0px, 0px, 0px, 0px) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+
+.rating input + label {
+    position: relative;
+    cursor: pointer;
+    margin: 3px 0;
+    padding-left: 42px;
+    height: 60px;
+    display: block;
+}
+
+.rating input + label::before, .rating input + label::after {
+    font-family: "Material Design Icons";
+    font-size: 42px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    width: 42px;
+    color: #999;
+}
+
+.rating input + label::after {
+    content: "";
+}
+
+.rating input:checked + label::after {
+    color: gold;
+    content: "";
+}
+
+input:disabled + label {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.selected-1 li:nth-child(1) input + label::after,
+.selected-2 li:nth-child(1) input + label::after,
+.selected-2 li:nth-child(2) input + label::after,
+.selected-3 li:nth-child(1) input + label::after,
+.selected-3 li:nth-child(2) input + label::after,
+.selected-3 li:nth-child(3) input + label::after,
+.selected-4 li:nth-child(1) input + label::after,
+.selected-4 li:nth-child(2) input + label::after,
+.selected-4 li:nth-child(3) input + label::after,
+.selected-4 li:nth-child(4) input + label::after,
+.selected-5 li:nth-child(1) input + label::after,
+.selected-5 li:nth-child(2) input + label::after,
+.selected-5 li:nth-child(3) input + label::after,
+.selected-5 li:nth-child(4) input + label::after,
+.selected-5 li:nth-child(5) input + label::after {
+    color: #ccac00;
+}
+
+.rating-1:hover li:nth-child(1) input + label::after,
+.rating-2:hover li:nth-child(1) input + label::after,
+.rating-2:hover li:nth-child(2) input + label::after,
+.rating-3:hover li:nth-child(1) input + label::after,
+.rating-3:hover li:nth-child(2) input + label::after,
+.rating-3:hover li:nth-child(3) input + label::after,
+.rating-4:hover li:nth-child(1) input + label::after,
+.rating-4:hover li:nth-child(2) input + label::after,
+.rating-4:hover li:nth-child(3) input + label::after,
+.rating-4:hover li:nth-child(4) input + label::after,
+.rating-5:hover li:nth-child(1) input + label::after,
+.rating-5:hover li:nth-child(2) input + label::after,
+.rating-5:hover li:nth-child(3) input + label::after,
+.rating-5:hover li:nth-child(4) input + label::after,
+.rating-5:hover li:nth-child(5) input + label::after {
+    color: gold;
+}

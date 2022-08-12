@@ -8,7 +8,9 @@
 @import url('./buttons.css');
 @import url('./dropdown.css');
 @import url('./breadcrumb.css');
+@import url('./rating.css');
 
+/* Blocks */
 @import url('./header.css');
 @import url('./home/hero.css');
 @import url('./home/bestseller.css');
@@ -20,4 +22,6 @@
 @import url('./home/join.css');
 
 @import url('./footer.css');
+
+@import url('./plp/plp.css');
 
