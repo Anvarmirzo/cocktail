@@ -135,6 +135,8 @@
 
 })(this);
 
-const elem = document.getElementById('rating');
-console.log(elem);
-const rating = new Rating(elem);
+const elems = document.querySelectorAll('.rating');
+
+elems.forEach(elem => {
+	const rating = new Rating(elem);
+});

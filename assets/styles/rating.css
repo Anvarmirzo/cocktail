@@ -6,6 +6,10 @@
     float: left;
 }
 
+.rating li:first-child label{
+    padding-left: 0;
+}
+
 .rating input {
     border: 0 none !important;
     clip: rect(0px, 0px, 0px, 0px) !important;
@@ -21,30 +25,17 @@
     position: relative;
     cursor: pointer;
     margin: 3px 0;
-    padding-left: 42px;
-    height: 60px;
+    padding-left: .5rem;
     display: block;
 }
 
-.rating input + label::before, .rating input + label::after {
-    font-family: "Material Design Icons";
-    font-size: 42px;
-    height: 25px;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    top: 6px;
-    width: 42px;
-    color: #999;
-}
-
 .rating input + label::after {
-    content: "";
+    content: "\2606";
+    font-size: 1rem;
 }
 
 .rating input:checked + label::after {
-    color: gold;
-    content: "";
+    content: "\2605";
 }
 
 input:disabled + label {
@@ -67,7 +58,8 @@ input:disabled + label {
 .selected-5 li:nth-child(3) input + label::after,
 .selected-5 li:nth-child(4) input + label::after,
 .selected-5 li:nth-child(5) input + label::after {
-    color: #ccac00;
+    content: '\2605';
+    color: #000000;
 }
 
 .rating-1:hover li:nth-child(1) input + label::after,
@@ -85,5 +77,5 @@ input:disabled + label {
 .rating-5:hover li:nth-child(3) input + label::after,
 .rating-5:hover li:nth-child(4) input + label::after,
 .rating-5:hover li:nth-child(5) input + label::after {
-    color: gold;
+    content: '\2605';
 }
