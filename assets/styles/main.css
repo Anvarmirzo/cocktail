@@ -25,7 +25,11 @@ img{
   flex-shrink: 0;
 }
 
-.section {
+.hr {
+  background-color: #CBCBCB;
+  border: 0;
+  height: 1px;
+  width: 100%;
 }
 
 

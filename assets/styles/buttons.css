@@ -9,6 +9,7 @@ button,
 label {
     cursor: pointer;
     transition: var(--hover-transition);
+    background-color: transparent;
 }
 
 button:disabled,
@@ -41,4 +42,46 @@ input:disabled + label {
 
 .link-underline:hover {
     color: #BB6B1E;
+}
+
+/* used sr-only properties */
+.radio-btn input {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.radio-btn label{
+    height: 3.125rem;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid transparent;
+    font-size: .875rem;
+    line-height: 1.7;
+}
+
+.radio-btn input:checked + label{
+    border-color: #BB6B1E;
+}
+
+.dark-btn{
+    background-color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #EAE5DD;
+    padding: 1rem;
 }

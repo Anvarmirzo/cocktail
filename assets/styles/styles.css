@@ -8,6 +8,7 @@
 @import url('./buttons.css');
 @import url('./dropdown.css');
 @import url('./breadcrumb.css');
+@import url('./accordion.css');
 @import url('./rating.css');
 
 /* Blocks */
@@ -25,3 +26,4 @@
 
 @import url('./plp/plp.css');
 
+@import url('./pdp/pdp.css');

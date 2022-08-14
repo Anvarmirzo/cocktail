@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 					slidesPerView: 1,
 					pagination: {
 						el: '.section-quotes .swiper-pagination',
-						type: 'bullets'
+						type: 'bullets',
+						clickable: true,
 					},
 					breakpoints: {
 						300: {
@@ -43,6 +44,18 @@ document.addEventListener('DOMContentLoaded', function () {
 					}
 				}
 			);
+
+			const detailSwiper = new Swiper('.section-detail-swiper', {
+				slidesPerView: 1,
+				pagination: {
+					clickable: true,
+					el: '.section-detail-swiper .swiper-pagination',
+				},
+				navigation: {
+					prevEl: '.section-detail-control-btn.prev',
+					nextEl: '.section-detail-control-btn.next',
+				},
+			});
 		} else {
 			console.warn('Swiper not found');
 		}
