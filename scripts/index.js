@@ -71,6 +71,25 @@ document.addEventListener('DOMContentLoaded', function () {
 					}
 				}
 			});
+			const recipesSwiper = new Swiper('.section-recipes-swiper', {
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: '.section-recipes .swiper-pagination',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.section-recipes-swiper .section-recipes-swiper-next'
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1
+					},
+					992: {
+						slidesPerView: 1.2
+					}
+				}
+			});
 		} else {
 			console.warn('Swiper not found');
 		}
