@@ -1,3 +1,15 @@
+.rating-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: .375rem;
+}
+
+.rating-wrapper span{
+    font-size: .875rem;
+    line-height: 1.7;
+    font-family: var(--secondary-font);
+}
+
 .rating {
     position: relative;
 }
@@ -6,7 +18,7 @@
     float: left;
 }
 
-.rating li:first-child label{
+.rating li:first-child label {
     padding-left: 0;
 }
 

@@ -1,0 +1,75 @@
+.section-benefits {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+.section-benefits__title {
+    font-size: 1.75rem;
+    line-height: 1.48;
+    margin-bottom: 1rem;
+    font-family: var(--primary-font);
+}
+
+.section-benefits__subtitle {
+    font-size: 12px;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.section-benefits-swiper {
+    padding-bottom: 1.5rem;
+}
+
+.section-benefits-swiper img {
+    height: 7.5rem;
+    aspect-ratio: 1;
+    margin: 0 auto 1rem;
+}
+
+.section-benefits-swiper h3 {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    line-height: 1.125;
+    margin-bottom: .625rem;
+}
+
+.section-benefits-swiper p {
+    font-size: .75rem;
+    line-height: 1.7;
+}
+
+
+.section-benefits-swiper .swiper-pagination {
+    bottom: 0;
+}
+
+@media (min-width: 992px) {
+    .section-benefits {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .section-benefits__title {
+        font-size: 3rem;
+        line-height: 1.48;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-benefits__subtitle {
+        max-width: 45rem;
+        margin: 0 auto 2.5rem;
+    }
+
+    .section-benefits-swiper img {
+        height: 12.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-benefits-swiper h3 {
+        font-size: 2rem;
+        line-height: 1.125;
+        margin-bottom: 1.125rem;
+    }
+}

@@ -1,0 +1,35 @@
+.accordion-item {
+    width: 100%;
+    overflow: hidden;
+    color: #000000;
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 1.6;
+}
+
+.accordion-item__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: .5rem .25rem .5rem 0;
+    width: 100%;
+    text-align: start;
+}
+
+.accordion-item__head h3 {
+    font-weight: inherit;
+}
+
+.accordion-item__body {
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.25s ease-out;
+    opacity: 0;
+}
+
+.accordion-item__active .accordion-item__body {
+    opacity: 1;
+    margin-bottom: 1rem;
+}

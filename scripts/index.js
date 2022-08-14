@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 					slidesPerView: 1,
 					pagination: {
 						el: '.section-quotes .swiper-pagination',
-						type: 'bullets'
+						type: 'bullets',
+						clickable: true
 					},
 					breakpoints: {
 						300: {
@@ -43,6 +44,67 @@ document.addEventListener('DOMContentLoaded', function () {
 					}
 				}
 			);
+
+			const detailSwiper = new Swiper('.section-detail-swiper', {
+				slidesPerView: 1,
+				pagination: {
+					clickable: true,
+					el: '.section-detail-swiper .swiper-pagination'
+				},
+				navigation: {
+					prevEl: '.section-detail-control-btn.prev',
+					nextEl: '.section-detail-control-btn.next'
+				}
+			});
+
+			const benefitsSwiper = new Swiper('.section-benefits-swiper', {
+				pagination: {
+					el: '.section-benefits .swiper-pagination',
+					clickable: true
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1
+					},
+					992: {
+						slidesPerView: 3
+					}
+				}
+			});
+			const recipesSwiper = new Swiper('.section-recipes-swiper', {
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: '.section-recipes .swiper-pagination',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.section-recipes-swiper .section-recipes-swiper-next'
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1
+					},
+					992: {
+						slidesPerView: 1.2
+					}
+				}
+			});
+
+			const recommendsSwiper = new Swiper('.section-recommends-swiper', {
+				navigation: {
+					nextEl: '.section-recommends .next',
+					prevEl: '.section-recommends .prev'
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 2
+					},
+					992: {
+						slidesPerView: 3
+					}
+				}
+			});
 		} else {
 			console.warn('Swiper not found');
 		}

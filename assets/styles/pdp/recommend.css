@@ -1,0 +1,39 @@
+.section-recommends__container {
+    position: relative;
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+}
+
+.section-recommends__container .section-detail-control-btn {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-recommends__title {
+    font-size: 1.75rem;
+    line-height: 1.48;
+}
+
+.section-recommends-swiper .swiper-slide {
+    border-right: 1px solid #CBCBCB;
+}
+
+.section-recommends-swiper .swiper-slide:first-child {
+    border-left: 1px solid #CBCBCB;
+}
+
+.section-recommends-swiper .swiper-slide:last-child {
+    border-right: 0;
+}
+
+@media (min-width: 992px) {
+    .section-recommends__container {
+        padding-top: 2.5rem;
+        padding-bottom: 1.875rem;
+    }
+
+    .section-recommends__title {
+        font-size: 3.5rem;
+    }
+
+}
