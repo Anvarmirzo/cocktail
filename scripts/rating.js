@@ -72,7 +72,7 @@
 
 		_each(items, (i, item) => {
 			const frag = document.createDocumentFragment();
-			const id = `rating-${i + 1}`;
+			const id = `rating-${i + 1 + Date.now()}`;
 			const label = _createElement('label', {for: id});
 			const radio = _createElement('input', {type: 'radio', id: id, name: this.options.name});
 

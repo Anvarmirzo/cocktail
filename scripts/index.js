@@ -90,6 +90,21 @@ document.addEventListener('DOMContentLoaded', function () {
 					}
 				}
 			});
+
+			const recommendsSwiper = new Swiper('.section-recommends-swiper', {
+				navigation: {
+					nextEl: '.section-recommends .next',
+					prevEl: '.section-recommends .prev'
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 2
+					},
+					992: {
+						slidesPerView: 3
+					}
+				}
+			});
 		} else {
 			console.warn('Swiper not found');
 		}
