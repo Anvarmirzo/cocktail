@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					pagination: {
 						el: '.section-quotes .swiper-pagination',
 						type: 'bullets',
-						clickable: true,
+						clickable: true
 					},
 					breakpoints: {
 						300: {
@@ -49,12 +49,27 @@ document.addEventListener('DOMContentLoaded', function () {
 				slidesPerView: 1,
 				pagination: {
 					clickable: true,
-					el: '.section-detail-swiper .swiper-pagination',
+					el: '.section-detail-swiper .swiper-pagination'
 				},
 				navigation: {
 					prevEl: '.section-detail-control-btn.prev',
-					nextEl: '.section-detail-control-btn.next',
+					nextEl: '.section-detail-control-btn.next'
+				}
+			});
+
+			const benefitsSwiper = new Swiper('.section-benefits-swiper', {
+				pagination: {
+					el: '.section-benefits .swiper-pagination',
+					clickable: true
 				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1
+					},
+					992: {
+						slidesPerView: 3
+					}
+				}
 			});
 		} else {
 			console.warn('Swiper not found');
