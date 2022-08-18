@@ -10,6 +10,8 @@
 @import url('./breadcrumb.css');
 @import url('./accordion.css');
 @import url('./rating.css');
+@import url('./counter.css');
+@import url('./switch-checkbox.css');
 
 /* Blocks */
 @import url('./header.css');
@@ -33,3 +35,4 @@
 @import url('./pdp/variety.css');
 @import url('./pdp/question.css');
 @import url('./pdp/recommend.css');
+@import url('./cart/cart.css');

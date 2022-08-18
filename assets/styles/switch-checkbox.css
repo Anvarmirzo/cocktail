@@ -1,0 +1,40 @@
+.switch-checkbox-label{
+    height: max-content;
+    display: flex;
+    width: max-content;
+}
+
+.switch-checkbox-label input[type="checkbox"] {
+    position: relative;
+    width: 3.5rem;
+    height: 1.5rem;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 5rem;
+    box-shadow: inset 0 0 5px rgba(255, 0, 0, 0.2);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.switch-checkbox-label input:checked[type="checkbox"] {
+    background: #000;
+}
+
+.switch-checkbox-label input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    aspect-ratio: 1;
+    height: 100%;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    transform: scale(.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+
+.switch-checkbox-label input:checked[type="checkbox"]:before {
+    left: calc(100% - 1.5rem);
+}
